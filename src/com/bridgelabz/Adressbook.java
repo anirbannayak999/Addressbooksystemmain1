@@ -7,10 +7,11 @@ public class Adressbook {
 
    static Scanner scanner = new Scanner(System.in);
 
-    ArrayList<Contact1> addressbook = new ArrayList<>();
+    ArrayList<Contact1> addressbooklist = new ArrayList<>();
+    Contact1 Contact = new Contact1();
 
     void addcontactdetail() {
-        Contact1 Contact = new Contact1();
+
         System.out.println("enter first name");
         String firstname= scanner.next();
         System.out.println("enter last name");
@@ -25,6 +26,7 @@ public class Adressbook {
         String zip=scanner.next();
         System.out.println("enter email address");
         String email=scanner.next();
+
         Contact.setFirstName(firstname);
         Contact.setLastName(lastname);
         Contact.setAddress(address);
@@ -32,8 +34,7 @@ public class Adressbook {
         Contact.setCity(city);
         Contact.setZip(zip);
         Contact.setEmail(email);
-
-        addressbook.add(Contact);
+        addressbooklist.add(Contact);
 
 
     }
