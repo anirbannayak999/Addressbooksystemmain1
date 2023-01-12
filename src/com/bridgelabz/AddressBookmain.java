@@ -31,7 +31,7 @@ public class AddressBookmain {
             Scanner scanner=new Scanner(System.in);
 
             System.out.println("\n*** Total Contacts present : " + adressbook.addressbooklist.size() + " ***");
-            System.out.println("\n\nPRESS 1 for Adding Contact   ||   PRESS 2 for Editing Contact   ||   PRESS 3 to DELETE Contact   ||  PRESS 4 to SEE all contacts || PRESS 5 to add multiple Contacts");
+            System.out.println("\n\nPRESS 1 for Adding Contact   ||   PRESS 2 for Editing Contact   ||   PRESS 3 for DELETEing  Contact   ||  PRESS 4 to SEE all contacts || PRESS 5 to add multiple Contacts");
             int choice =scanner.nextInt();
 
             switch (choice) {
